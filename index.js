@@ -7,7 +7,7 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password : 'root',
+  password : '',
   database : 'clasenode'
 });
 
@@ -19,7 +19,7 @@ app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 app.get('/', (req, res) => {
-  res.send("Bienvenido a la API de Rogelio Noris");
+  res.send("Bienvenido a la API ");
 });
 
 app.get('/personajes', (req, res) => {
